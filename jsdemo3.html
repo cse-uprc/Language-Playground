@@ -1,0 +1,28 @@
+<html> <!-- WebPage with View made of completely JS -->
+  <head>
+    <script type="text/javascript">
+       // run this function when the document is loaded
+       window.onload = function() {
+
+         // create some elements
+         var heading = document.createElement("h2");
+         var heading_text = document.createTextNode("Javascript only!");
+         heading.setAttribute("style","color: blue;")
+         heading.appendChild(heading_text);
+         document.body.appendChild(heading);
+
+         //can call another function
+         createSomethingElse(); 
+      };
+
+      function createSomethingElse() {
+         var textbox = document.createElement("INPUT");
+         textbox.setAttribute("type", "text");
+         document.body.appendChild(textbox);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Notice, there is nothing here!-->
+  </body>
+</html>

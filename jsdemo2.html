@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+    <h1>Javascript- Form Validation</h1>
+    <form name="myForm" action="Run_a_function_here" onsubmit="return validateForm()" method="post">
+        Name: 
+        <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+<!-- W3 Schools, Javascript Form Validation -->
